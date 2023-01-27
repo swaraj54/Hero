@@ -33,8 +33,8 @@ function show(data) {
                     <div class='w-50' style='height:100px'>
                         <img  src='${r.image && r.image.thumbnail.contentUrl}' alt='No-Image' />
                     </div>
-                        <h5 class="card-title">${r.name}</h5>
-                        <p class="card-text">${r.description}</p>
+                        <h5 class="card-title"> Topic : ${r.name}</h5>
+                        <p class="card-text"> <b>Description :</b> ${r.description}</p>
                     </div>
                     <div >
                         <p onclick="singlePage(${JSON.stringify(r).split('"').join("&quot;")})" class="btn btn-primary">Click to Read more.</p>
